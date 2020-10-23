@@ -51,7 +51,7 @@ table {
 }
 body {
     font-size: 12px;
-    line-height: 1.8;
+    line-height: 1.9;
     font-family: 'Poppins', sans-serif;
     color: #637381;
 }
@@ -97,13 +97,13 @@ a {
 }
 
 .padding {
-    padding: 80px 0;
+    padding: 90px 0;
 }
 
 /* Buttons */
 .btn {
     display: inline-block;
-    padding: 14px 38px;
+    padding: 14px 44px;
     font-size: 16px;
     text-transform: uppercase;
     text-decoration: none;
@@ -147,6 +147,7 @@ a {
 /* #9297A2 - Light Grey Footer */
 /* #191D34 - Black - Sub-headings */
 /* #FBBA43 - Stars */
+/* #FBF9FF - Light Purple - Blog Aside */
 
 
 
@@ -262,6 +263,7 @@ Each section is usually 4 layers deep, for example:
 .col-3-3 {
     border: 2px solid #FD656B;
     padding: 20px 10px 20px 35px;
+    background-color: white;
 }
 .team .col-3-3 .heading {
     font-size: 35px;
@@ -288,42 +290,48 @@ Each section is usually 4 layers deep, for example:
 }
 
 /* Trusted Team */
+.trusted-team {
+    margin-bottom: -7px;
+}
 .trusted-team .container-small {
     position: relative;
 }
 .col-1-2 {
-    width: 55%;
+    width: 60%;
 }
 .col-1-2 img {
     width: 100%;
 }
 .col-2-2 {
-    background-color: rgba(255,255,255, 0.7);
-    padding: 40px;
+    background-color: rgba(255,255,255, 0.8);
+    padding: 40px 60px 40px 40px;
     width: 55%;
-    top: 110px;
-    left: 400px;
+    top: 120px;
+    left: 440px;
     position: absolute;
 }
 .col-2-2 .heading {
     line-height: 1.2;
-    margin-bottom: 25px;
+    margin-bottom: 45px;
 }
 .col-2-2 p {
-    margin-bottom: 30px;
+    margin-bottom: 39px;
+    line-height: 1.9;
 }
 .col-2-2 a {
     color: white;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.8px;
 }
 
 /* Services */
-
 .services .col-1-3 {
     width: 30%;
     height: 170px;
 }
 .services .heading {
-    font-size: 50px;
+    font-size: 55px;
     text-align: center;
     font-weight: 700;
 }
@@ -344,6 +352,7 @@ Each section is usually 4 layers deep, for example:
 }
 .services a {
     color: #FD656B;
+    font-weight: 500;
 }
 .services .btn-secondary {
     margin-bottom: 80px;
@@ -359,18 +368,23 @@ Each section is usually 4 layers deep, for example:
 .col {
     flex: 0 1 50%;
 }
+.completed-cases {
+    padding-left: 20px;
+}
 .cases .heading {
     margin-bottom: 20px;
     margin-top: -60px;
 }
 .cases a {
     color: #FD656B;
+    font-weight: 500;
 }
 .cases p {
     margin-bottom: 30px;
+    margin-right: 30px;
 }
 .cases img {
-    width: 63%;
+    width: 52%;
     margin: 0 1%;
 }
 
@@ -387,6 +401,7 @@ Each section is usually 4 layers deep, for example:
 }
 .testimonials img {
     padding-bottom: 20px;
+    width: 130px;
 }
 .stars i {
     padding: 1px;
@@ -403,3 +418,532 @@ Each section is usually 4 layers deep, for example:
 .client-company {
     color: #8A8A8A;
 }
+
+/* Recent News */
+.col-30 {
+    width: 30%;
+}
+.news .heading {
+    font-size: 55px;
+    margin-bottom: 80px;
+    text-align: center;
+    margin-top: -90px;
+}
+.category {
+    color: #FD656B;
+    padding: 10px 0 15px 0;
+}
+.blog-title {
+    font-size: 18px;
+    color: #191D34;
+    line-height: 1.4;
+    padding-right: 50px;
+    padding-bottom: 5px;
+}
+.padding-left {
+    padding-left: 40px;
+}
+
+/* Contact */
+.contact {
+    background-color: #012D5B; 
+}
+.contact .heading {
+    color: white;
+}
+.contact p {
+    color: white;
+}
+.form {
+    background-color: #012D5B;
+}
+.contact input {
+    background-color: #012D5B;
+    height: 50px;
+    border: 1px solid white;
+    margin-bottom: 20px;
+   
+}
+
+select {
+    background-color: #012D5B;
+    height: 50px;
+    border: 1px solid white;
+    margin-bottom: 20px;
+   
+}
+.name {
+    width: 49%;
+}
+.phone {
+    width: 49%;
+}
+.service-types {
+    width: 70%;
+}
+input::placeholder {
+    color: white;
+    padding-left: 20px;
+}
+/* select {
+    color: white;
+    padding-left: 20px;
+    margin-right: 20px;
+    position: relative;
+} */
+
+.down-icon {
+    color: white;
+    position: absolute;
+}
+
+
+/* Extra */
+
+select {
+    padding: 5px;
+    font-size: 16px;
+    line-height: 1;
+    border: 0;
+    color: white;
+    border: 1px solid white;
+    background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right #012D5B;
+    appearance: none;
+    background-position-x: 344px;
+}
+
+/* Footer */
+.flex-start {
+    display: flex;
+    justify-content: flex-start;
+}
+.footer-col-1 {
+    width: 32%;
+}
+.footer-col-2 { 
+    width: 80%;
+}
+.footer-info {
+    margin-left: 40px;
+    width: 35%;
+}
+.footer-logo {
+    margin-bottom: 45px;
+}
+.footer p {
+    margin-bottom: 45px;
+}
+.footer i {
+    color: #012D5B; 
+    font-size: 18px;
+    margin-right: 16px;
+}
+.footer h3 {
+    color: #012D5B;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.footer a {
+    color: #9297A2;
+}
+.footer li {
+    margin-bottom: 10px;
+    color: #9297A2;
+}
+
+.footer-2 {
+    border-top: 1px solid lightgrey;
+}
+.copyright {
+    text-align: center;
+    padding: 30px 0;
+    margin: 0 0.5%;
+    color: #9297A2;
+}
+.footer-2 i {
+  margin: 0 2px 0 3px;
+  color: #FD656B;
+  font-size: 14px;
+  font-weight: 300;
+}
+.footer-2 p {
+    color: #FD656B;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    font-weight: 300;
+}
+span {
+    color: #9297A2;
+}
+
+/* About Page */
+/* Hero */
+.about-hero {
+    background: url("../media/hero/about_hero.jpg") top/cover no-repeat, #012D5B;
+    height: 250px;
+}
+.about-hero .heading, .services-hero .heading, .cases-hero .heading, .blog-hero .heading {
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 0.5px;
+}
+.about-padding {
+    padding-top: 90px;
+}
+
+/* Services Page */
+/* Hero */
+.services-hero {
+    background: url("../media/hero/services_hero.jpg") top/cover no-repeat, #012D5B;
+    height: 250px;
+}
+
+/* Cases Page */
+.cases-hero {
+    background: url("../media/hero/cases_hero.jpg") top/cover no-repeat, #012D5B;
+    height: 250px;
+}
+.marketing-strategy {
+    background-color: #F6F9FE;
+}
+.marketing-strategy .container-small {
+    position: relative;
+    margin-bottom: 20px;
+}
+.marketing-strategy .text-float {
+    background-color: white;
+    position: absolute;
+    padding: 12px 10px 10px 23px;
+    bottom: 7px;
+    width: 221px;
+}
+.marketing-strategy .heading {
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+.marketing-strategy p {
+    font-size: 12px;
+    line-height: 1.6;
+}
+.marketing-strategy img {
+    width: 100%;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.gallery-1 {
+    width: 31%;
+}
+
+/* Blog Page */
+/* Hero */
+.blog-hero {
+    background: url("../media/hero/blog_hero.jpg") top/cover no-repeat, #012D5B;
+    height: 250px;
+}
+
+/* Blog List */
+.blog-list {
+    position: relative;
+    width: 67%;
+}
+.date-square {
+    position: relative;
+    bottom: 230px;
+    left: 30px;
+    background-color: #FD656B;
+    width: 80px;
+    padding: 10px 15px 2px 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+.blog .day {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1;
+}
+.blog .month {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.blog-title {
+    color: #191D34;
+    font-size: 20px;
+    padding: 50px 0 30px 0;
+    font-weight: 600;
+}
+.blog-summary {
+    margin: 10px 50px 20px 0;
+}
+.blog img {
+    width: 100%;
+    margin-bottom: 40px;
+}
+.blog-categories {
+    padding-bottom: 0;
+}
+.blog-categories a, .comments a {
+    color: #9297A2;
+}
+.blog .fas {
+    color: #9297A2;
+    font-size: 12px;
+    margin-right: 8px;
+}
+.divider {
+    margin-right: 10px;
+}
+.blog-categories i {
+    padding-top: 4px;
+}
+.margin-left {
+    margin-left: 30px;
+}
+.blog-box {
+    box-shadow: 2px 4px 10px lightgrey;
+    margin-bottom: 70px;
+    height: 500px;
+    width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+    margin-left: 3%;
+}
+.sidebar .search-box {
+    background-color: #FBF9FF;
+    padding: 25px;
+    position: relative;
+}
+.sidebar input {
+    border: 1px solid lightgrey;
+    background-color: white;
+    width: 100%;
+    height: 40px;
+}
+.sidebar input::placeholder {
+    color: #9297A2;
+    font-size: 12px;
+    margin: 0;
+    padding: 40px 10px;
+}
+.search-icon .fas {
+  color: white;
+  font-size: 12px;
+  padding-left: 8px;
+}
+.search-icon {
+    background-color: #FD656B;
+    width: 38px;
+    height: 39px;
+    right: 25px;
+    margin-top: 0;
+    position: absolute;
+}
+.sidebar .btn-secondary {
+    padding: 10px 90px;
+    margin-top: 15px;
+}
+.sidebar a {
+    color: #FD656B;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+    border: 1px solid #FD656B;
+    border-radius: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'
+
+
