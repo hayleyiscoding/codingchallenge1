@@ -528,6 +528,7 @@ input::placeholder {
 }
 .footer-col-1 {
     width: 32%;
+    margin-left: 65px;
 }
 .footer-col-2 { 
     width: 80%;
