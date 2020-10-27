@@ -97,7 +97,7 @@ a {
 }
 
 .padding {
-    padding: 90px 0;
+    padding: 80px 0;
 }
 
 /* Buttons */
@@ -328,10 +328,12 @@ Each section is usually 4 layers deep, for example:
 /* Services */
 .services .col-1-3 {
     width: 30%;
-    height: 170px;
+    height: 250px;
+    padding: 40px 0;
+    background-color: rgba(246,249,254,0.5);
 }
 .services .heading {
-    font-size: 55px;
+    font-size: 50px;
     text-align: center;
     font-weight: 700;
 }
@@ -424,7 +426,7 @@ Each section is usually 4 layers deep, for example:
     width: 30%;
 }
 .news .heading {
-    font-size: 55px;
+    font-size: 50px;
     margin-bottom: 80px;
     text-align: center;
     margin-top: -90px;
@@ -450,69 +452,76 @@ Each section is usually 4 layers deep, for example:
 }
 .contact .heading {
     color: white;
+    margin-bottom: 20px;
+    line-height: 1.3;
+    font-size: 37px;
 }
 .contact p {
     color: white;
+    padding-right: 40px;
+    font-weight: 400;
+    font-size: 12px;
 }
 .form {
     background-color: #012D5B;
+    width: 100%;
 }
 .contact input {
     background-color: #012D5B;
-    height: 50px;
+    height: 47px;
     border: 1px solid white;
     margin-bottom: 20px;
-   
 }
-
 select {
     background-color: #012D5B;
-    height: 50px;
+    height: 47px;
     border: 1px solid white;
-    margin-bottom: 20px;
-   
+    padding-right: 20px;
+    appearance: none;
+    background: url("../media/arrow/arrow.png");
+	background-repeat:no-repeat;
+	background-size:16px 17px;
+	background-position: 97% 50%;
 }
 .name {
-    width: 49%;
+    width: 48%;
 }
 .phone {
-    width: 49%;
+    width: 48%;
 }
-.service-types {
-    width: 70%;
+#services {
+    width: 63%;
+    padding: 0px 20px 0 20px;
+    color: white;
 }
 input::placeholder {
     color: white;
     padding-left: 20px;
 }
-/* select {
+.contact a {
     color: white;
-    padding-left: 20px;
-    margin-right: 20px;
-    position: relative;
-} */
-
-.down-icon {
-    color: white;
-    position: absolute;
+    padding: 12px 68px;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: capitalize;
+    border-radius: 4px;
+    font-weight: 300;
+}
+.col-call-back {
+    /* padding-right: 80px; */
+    width: 39%;
+}
+.col-form {
+    align-self: flex-start;
+    width: 58%;
+    padding-top: 10px;
 }
 
-
-/* Extra */
-
-select {
-    padding: 5px;
-    font-size: 16px;
-    line-height: 1;
-    border: 0;
-    color: white;
-    border: 1px solid white;
-    background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right #012D5B;
-    appearance: none;
-    background-position-x: 344px;
-}
 
 /* Footer */
+.footer {
+    background-color: #F8FAFE;
+}
 .flex-start {
     display: flex;
     justify-content: flex-start;
@@ -551,7 +560,6 @@ select {
     margin-bottom: 10px;
     color: #9297A2;
 }
-
 .footer-2 {
     border-top: 1px solid lightgrey;
 }
@@ -584,7 +592,7 @@ span {
     background: url("../media/hero/about_hero.jpg") top/cover no-repeat, #012D5B;
     height: 250px;
 }
-.about-hero .heading, .services-hero .heading, .cases-hero .heading, .blog-hero .heading {
+.about-hero .heading, .services-hero .heading, .cases-hero .heading, .blog-hero .heading, .contact-hero .heading {
     color: white;
     text-align: center;
     font-weight: 700;
@@ -649,7 +657,7 @@ span {
 /* Blog List */
 .blog-list {
     position: relative;
-    width: 67%;
+    width: 100%;
 }
 .date-square {
     position: relative;
@@ -672,7 +680,7 @@ span {
     font-size: 14px;
     margin-bottom: 5px;
 }
-.blog-title {
+.blog .blog-title {
     color: #191D34;
     font-size: 20px;
     padding: 50px 0 30px 0;
@@ -707,19 +715,37 @@ span {
 }
 .blog-box {
     box-shadow: 2px 4px 10px lightgrey;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     height: 500px;
     width: 100%;
+}
+.pages-block {
+    margin-top: 20px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #F0E9FE;
+    color: darkgrey;
+    margin-right: 10px;
+    font-size: 13px;
+}
+.box-2 {
+    background: #FBF9FF;
+}
+.pages i {
+    padding-left: 7px;
 }
 
 /* Sidebar */
 .sidebar {
     margin-left: 3%;
 }
-.sidebar .search-box {
+
+/* Search Box */
+.search-box {
     background-color: #FBF9FF;
-    padding: 25px;
+    padding: 20px;
     position: relative;
+    width: 288px;
 }
 .sidebar input {
     border: 1px solid lightgrey;
@@ -742,7 +768,7 @@ span {
     background-color: #FD656B;
     width: 38px;
     height: 39px;
-    right: 25px;
+    right:20px;
     margin-top: 0;
     position: absolute;
 }
@@ -760,8 +786,220 @@ span {
     border-radius: 0px;
 }
 
+/* Category */
+.categories {
+    background-color: #FBF9FF;
+    padding: 30px;
+    margin-top: 20px;
+    width: 288px;
+}
+.categories li {
+    border-top: 0.5px solid lightgrey;
+    padding: 10px 0;
+}
+.categories a {
+    border: none;
+    color: #637381;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-size: 12px;
+}
+.sidebar-heading {
+    color: #191D34;
+    padding: 10px 0 10px 0px;
+    font-weight: 600;
+    border-bottom: 0.5px solid lightgrey;
+    font-size: 16px;
+}
+.categories li:first-child {
+    padding-top: 30px;
+    border: none;
+}
 
+/* Recent Posts */
+.recent-posts {
+    padding: 20px 30px 40px 30px;
+    background-color: #FBF9FF;
+    margin-top: 20px;
+    width: 288px;
+}
+.recent-posts .sidebar-heading {
+ margin-bottom: 20px; 
+}
+.recent-posts a {
+    border: none;
+    color: #191D34;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-size: 12px;
+    font-weight: 700;
+}
+.recent-posts img {
+    width: 60px;
+    margin-bottom: 0;
+}
+.recent-posts-list {
+    margin-left: 20px;
+}
+.recent-posts .posts {
+    padding-bottom: 10px;
+}
+.flex-2 {
+    display: flex;
+    align-content: center;
+}
 
+/* Tag Clouds */
+.tag-clouds {
+    padding: 20px 30px 20px 30px;
+    background-color: #FBF9FF;
+    margin-top: 20px;
+    flex: 0 1 40px;
+    width: 288px;
+}
+.tag-clouds a {
+    border: none;
+    color: #9297A2;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 2px 8px;
+}
+.tag-clouds .sidebar-heading {
+    margin-bottom: 20px; 
+}
+.tag-clouds li {
+    background-color: white;
+    border: 1px solid lightgrey;
+    margin: 2%;
+}
+
+/* Instagram Feed */
+.instagram-feed {
+    background-color: #FBF9FF;
+    padding: 20px 30px;
+    margin-top: 20px;
+    width: 288px;
+}
+.instagram-feed .sidebar-heading {
+    margin-bottom: 20px; 
+}
+
+.instagram-feed img {
+    margin-left: 6px;
+    margin-bottom: 0;
+    width: 70px;
+}
+.instagram-feed a {
+    border: none;
+}
+
+/* Newsletter */
+.newsletter {
+    background-color: #FBF9FF;
+    padding: 20px;
+    position: relative;
+    width: 288px;
+    margin-top: 20px;
+}
+.newsletter .btn-secondary {
+    padding: 10px 78px;
+    margin-top: 15px;
+}
+.newsletter .sidebar-heading {
+    margin-bottom: 20px; 
+}
+
+/* Contact */
+/* Hero */
+.contact-hero {
+    background: url("../media/hero/contact_hero.jpg") top/cover no-repeat, #012D5B;
+    height: 250px;
+}
+
+/* Map */
+.map img {
+    width: 100%;
+    padding-top: 90px;
+    padding-bottom: 50px;
+}
+
+/* Form */
+.form-2 {
+    width: 70%;
+    padding-bottom: 90px;
+}
+.contact-details {
+    width: 30%;
+    align-self: flex-start;
+    padding-left: 80px;
+}
+.get-in-touch .heading {
+    font-size: 23px;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+.form-2 input::placeholder {
+    color: darkgrey;
+    padding-left: 20px;
+    font-size: 13px;
+}
+.form-2 textarea {
+    margin-bottom: 15px;
+    border: 0.5px solid lightgrey;
+    font-family: inherit;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-weight: 400;
+    color: darkgrey;
+    font-size: 13px;
+}
+
+.form-2 input {
+    height: 45px;
+    border: 0.5px solid lightgrey;
+}
+.form-2 .name {
+    width: 50%;
+
+    margin-bottom: 25px;
+}
+.form-2 .email {
+    width: 50%;
+    margin-bottom: 25px;
+}
+.subject {
+    width: 100%;
+    margin-bottom: 40px;
+}
+.form-2 a {
+    color: #FD656B;
+    background-color: white;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 13px 50px 13px 50px;
+    border: 1px solid #FD656B;
+    font-size: 13px;
+}
+.margin-bottom {
+    margin-bottom: 35px;
+}
+.contact-details i {
+    margin-right: 18px;
+    font-size: 18px;
+    color: rgb(155, 155, 155);
+    padding-top: 3px;
+}
+.contact-details .email {
+    color:black;
+    margin-left: 0;
+}
+.bold {
+    color: black;
+    font-weight: 500;
+}
 
 
 
