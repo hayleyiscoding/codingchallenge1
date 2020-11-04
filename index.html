@@ -14,7 +14,7 @@
     <header>
         <!-- Address and Social Bar -->
         <section class="address-bar">
-            <div class="container flex">
+            <nav class="container flex">
                 <!-- Address and Email -->
                 <ul class="address-and-email flex">
                     <li class="address flex">
@@ -30,7 +30,8 @@
                 <ul class="social-icons flex">
                     <li>
                         <a href="#" target="_blank">
-                            <i class="fab fa-linkedin-in"></i></a>
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
                     </li>
                     <li>
                         <a href="#" target="_blank">
@@ -48,7 +49,7 @@
                         </a>
                     </li>
                 </ul>
-            </div>
+            </nav>
         </section>
         <!-- Navbar -->
         <section class="navbar">
@@ -94,7 +95,7 @@
                 <div class="container-small">
                     <h5 class="hero-subheading">Welcome to Buson</h5>
                     <h1 class="hero-heading">We help you<br/>to grow your<br/> business</h1>
-                    <a href="" class="btn btn-primary">Learn more</a>
+                    <a href="#" class="btn btn-primary">Learn more</a>
                 </div>
             </div>
         </section>
@@ -124,16 +125,16 @@
         <!-- Trusted Team -->
         <section class="trusted-team padding">
             <div class="container">
-                <div class="container-small flex">
+                <article class="container-small flex">
                     <div class="col-1-2">
                         <img src="assets/media/team/wetrusted.jpg" alt="Business man and woman looking at laptop">
                     </div>
-                    <article class="col-2-2">
+                    <div class="col-2-2">
                         <h3 class="heading">We are more trusted <br/> than 5000 clients</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe hic dolorum fugit soluta, atque tempora corrupti quae obcaecati nobis debitis sed? Mollitia praesentium ipsum atque animi officiis velit itaque quos. Quae obcaecati nobis debitis sed?</p>
                         <a class="btn btn-primary" href="about.html">Learn More</a>
-                    </article>
-                </div>
+                    </div>
+                </article>
             </div>
         </section>
         <!-- Services -->
@@ -163,26 +164,26 @@
             </div>
         </section>
         <!-- Cases -->
-        <section class="cases padding">
-            <div class="container flex">
-               <article class="col completed-cases">
+        <section class="cases padding overflow">
+            <article class="container flex">
+               <div class="col completed-cases">
                     <h3 class="heading">Completed Cases</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus necessitatibus rem, earum odio odit quas reprehenderit nemo nihil repellendus velit? Dolore. Lorem. Lorem ipsum dolor sit.</p>
                     <a class="btn btn-secondary" href="cases.html">See More</a>
-               </article>
-               <article class="col flex">
+               </div>
+               <div class="col flex">
                    <img src="assets/media/cases/completed_case_2.png" alt="">
                    <img src="assets/media/cases/completed_case_1.png" alt="">
                    <img src="assets/media/cases/completed_case_2.png" alt="">
-               </article>
-            </div>
+               </div>
+            </article>
         </section>
         <!-- Testimonial -->
         <section class= "testimonials padding">
             <div class="container">
                 <div class="container-3">
                     <img src="assets/media/testimonial/Homepage_testi.png" alt="Headshot of man">
-                    <p class="testimonial heading">You can't succeed if you just do what others do and follow the well-worn path. You need to create a new and original path for yourself.</p>
+                    <blockquote class="testimonial heading">You can't succeed if you just do what others do and follow the well-worn path. You need to create a new and original path for yourself.</blockquote>
                     <div class="stars center">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -207,19 +208,19 @@
                         <img src="assets/media/recent/rcent_1.png" alt="Two men having a discussion at a desk">
                         <a href="#"><p class="category padding-left">Business planning</p></a>
                         <a href="#"><h6 class="blog-title padding-left">Amazing Places to Visit in Summer</h6></a> 
-                        <p class="publish-date padding-left">November 30, 2020</p>
+                        <time class="publish-date padding-left">November 30, 2020</time>
                     </article>
                     <article class="col-30">
                         <img src="assets/media/recent/rcent_2.png" alt="A woman and a man having a discussion at a desk">
                         <a href="#"><p class="category padding-left">Audit</p></a>
                         <a href="#"><h6 class="blog-title padding-left">Amazing Places to Visit in Summer</h6></a> 
-                        <p class="publish-date padding-left">November 30, 2020</p>
+                        <time class="publish-date padding-left">November 30, 2020</time>
                     </article>
                     <article class="col-30">
                         <img src="assets/media/recent/rcent_3.png" alt="Two women looking at a laptop">
                         <a href="#"><p class="category padding-left">Business planning</p></a>
                         <a href="#"><h6 class="blog-title padding-left">Amazing Places to Visit in Summer</h6></a> 
-                        <p class="publish-date padding-left">November 30, 2020</p>
+                        <time class="publish-date padding-left">November 30, 2020</time>
                     </article>
                 </div>
             </div>
@@ -233,21 +234,20 @@
             </article>
             <form class="col-form" action="#">
                 <div class="flex">
-                    <input class="name" type="name"
+                    <input class="name" type="text"
                     placeholder="Name">
-                    <input class="phone" type="phone"
+                    <input class="phone" type="tel"
                     placeholder="Phone">
                 </div>
                 <div class="flex">
                     <select id="services" name="services">
-                        <option value="services">Services</option>
-                        <option value="comm">Commercial Cleaning</option>
+                        <option value="comm" selected>Commercial Cleaning</option>
                         <option value="office">Office Cleaning</option>
                         <option value="build">Building Cleaning</option>
                         <option value="floor">Floor Cleaning</option>
                         <option value="apart">Apartment Cleaning</option>
                     </select>
-                    <a class="btn btn-primary">Send</a>
+                    <button class="btn btn-primary btn-tertiary">Send</button>
                 </div>
             </form>
         </div>
@@ -259,12 +259,12 @@
             <div class="footer-col-1">
                 <img class="footer-logo" src="assets/media/logo/logo2_footer.png" alt="Brand Logo">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, nemo! Voluptatibus aliquam impedit.</p>
-                <div class="flex-start">
+                <nav class="flex-start">
                     <a href="#"><i class="fab fa-facebook-square"></i></a>
                     <a href=""><i class="fab fa-twitter-square"></i></a>
                     <a href=""><i class="fab fa-linkedin"></i></a>
                     <a href=""><i class="fab fa-pinterest-square"></i></a>
-                </div>
+                </nav>
             </div>
             <div class="flex-start footer-col-2">
                 <div class="footer-info">
@@ -289,7 +289,7 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="footer-info">
+                <nav class="footer-info">
                     <h3>Services</h3>
                     <ul>
                         <li>
@@ -308,15 +308,15 @@
                             <a href="#">Apartment Cleaning</a>
                         </li>
                     </ul>
-                </div>
-                <div class="footer-info">
+                </nav>
+                <nav class="footer-info">
                     <h3>Get in Touch</h3>
                     <ul>
                         <li>152-515-6565</li>
                         <li><a href="mailto:demomail@gmail.com">Demomail@gmail.com</a></li>
                         <li>New Orleans, USA</li>
                     </ul>
-                </div>
+                </nav>
             </div>
         </div>
         <div class="container-small center footer-2">
